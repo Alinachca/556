@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Цвет фона */
+}
+
+.loader-container {
+  position: relative;
+  width: 100px; /* Регулируйте ширину контейнера по своему усмотрению */
+}
+
+.loader-line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px; /* Высота линии загрузки */
+  background-color: #333; /* Цвет линии загрузки */
+}
+
+.loader-icon {
+  position: absolute;
+  top: 50%;
+  left: -20px; /* Регулируйте позицию иконки неба по своему усмотрению */
+  width: 40px; /* Регулируйте размер иконки неба по своему усмотрению */
+  height: 40px;
+  background-image: url('sky_icon.png'); /* Замените 'sky_icon.png' на путь к вашей иконке неба */
+  background-size: cover;
+  animation: skyMove 2s infinite linear; /* Анимация движения иконки неба */
+}
+
+@keyframes skyMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

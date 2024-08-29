@@ -1,0 +1,61 @@
+   body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('C:\\Users\\alina\\OneDrive\\Рабочий стол\\наш проект с лии\\source\\images\\photo5.jpg');
+      /* Можно добавить дополнительные настройки для фона, например, фиксированный фон или изменение размеров */
+      background-size: cover;
+      background-position: center;
+      /* Убираем повторение изображения, если оно меньше размеров окна браузера */
+      background-repeat: no-repeat;
+}
+
+.container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+}
+  .text-container {
+      text-align: center;
+      margin-bottom: 20px; /* Добавляем небольшой отступ снизу */
+	   animation: slide-in 1s ease forwards; /* Анимация для появления текста */
+	    }
+    @keyframes slide-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px); /* Анимация начинается с небольшого смещения вниз */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+.text {
+      font-size: 24px;
+      color: black;
+      font-family: Arial, sans-serif;
+      /* Вы можете добавить другие стили по вашему усмотрению */
+    }
+
+.btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px; /* Добавляем отступ после кнопки */
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Немного увеличим кнопку при наведении */
+}
+

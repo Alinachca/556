@@ -1,0 +1,72 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+   background-image: url("C:/Users/alina/OneDrive/Рабочий стол/наш проект с лии/source/images/photo2.jpg"); /* Путь к вашему изображению */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.registration-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background-color: rgba(255, 255, 255, 0.8); /* Добавим немного прозрачности, чтобы контент был виден на фоне */
+}
+}
+
+.registration-form h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Немного увеличим кнопку при наведении */
+}
+
+
+
+
+
+/* Убираем фон для формы регистрации */
+.registration-form {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+

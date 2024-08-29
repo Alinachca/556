@@ -1,0 +1,54 @@
+body, html {
+   margin: 0;
+  padding: 0;
+  height: 100vh; /* Высота на весь экран */
+  background-image: url('C:\\Users\\alina\\OneDrive\\Рабочий стол\\наш проект с лии\\source\\images\\photo1.jpg'); /* Путь к вашему изображению */
+  background-size: cover; /* Масштабируем изображение на весь экран */
+  background-position: center; /* Центрируем изображение */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: column; /* Выравниваем элементы по центру вертикально */
+}
+.welcome-container {
+  margin-top: 20vh; /* Расстояние от верха экрана */
+}
+
+.welcome-text {
+  color: black;
+  font-size: 24px; /* Уменьшаем размер текста */
+  text-align: center; /* Выравниваем текст по центру */
+  animation: fadeInUp 1.5s ease; /* Анимация появления текста */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Начальное положение текста */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Конечное положение текста */
+  }
+}
+.container {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px; /* Добавляем отступ после кнопки */
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Немного увеличим кнопку при наведении */
+}
+
